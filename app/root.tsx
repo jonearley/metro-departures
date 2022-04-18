@@ -61,7 +61,7 @@ export async function loader() {
   return undefined
 }
 
-export function ErrorBoundary() {
+function IssuePage() {
   return (
     <Layout>
       <main className="app-error">
@@ -72,6 +72,14 @@ export function ErrorBoundary() {
       </main>
     </Layout>
   )
+}
+
+export function ErrorBoundary() {
+  return <IssuePage />
+}
+
+export function CatchBoundary() {
+  return <IssuePage />
 }
 
 type LayoutProps = {
