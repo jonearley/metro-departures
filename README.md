@@ -4,8 +4,6 @@ Find Minneapolis METRO departures using [metro-departures.netlify.app](https://m
 
 [![Preview of Minneapolis METRO departures route, direction, and stops, and departures.](screenshot.png)](https://metro-departures.netlify.app/route/902/direction/1/stop/UNDP)
 
-Production: https://metro-departures.netlify.app/route/902/direction/1/stop/UNDP
-
 ## Development Setup
 
 1. Install the [Netlify CLI](https://www.netlify.com/products/dev/):
@@ -44,7 +42,7 @@ Open up [http://localhost:3000](http://localhost:3000), and you should be ready 
 
 ## Testing
 
-The Cypress intregration tests will open up and run alongside the development, so make sure [http://localhost:3000](http://localhost:3000) is running.
+The Cypress intregration tests will open up and run alongside development, so make sure [http://localhost:3000](http://localhost:3000) is running.
 
 ```sh
 npm run test
