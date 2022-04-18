@@ -1,0 +1,129 @@
+body, html {
+  margin: 0;
+}
+
+body {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+table {
+  width: 100%;
+}
+
+th, td, caption {
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+
+ul, li, h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration-thickness: 2px;
+}
+
+*:focus {
+  box-shadow: 0 0 0 2px #FFF, 0 0 0 4px #000;
+  outline: none;
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 12rem 12rem 12rem 1fr;
+}
+
+.app-header {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / 5;
+  background: #000;
+}
+
+.app-name {
+  display: inline-block;
+  color: #FFF;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.app-error {
+  grid-column: 1 / -1;
+  margin: 1rem;
+  text-align: center;
+}
+
+.select-route {
+  border-right: dashed 2px #000;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.select-route a {
+  display: block;
+  padding: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.select-route a[aria-current="page"],
+.select-route a:hover,
+.route-focus:focus {
+  background: #000;
+  color: #FFF;
+}
+
+.select-route a:hover,
+.route-focus:focus {
+  text-decoration: underline;
+}
+
+table.departures {
+  max-width: 48rem;
+  font-size: 1rem;
+  border-collapse: collapse;
+  border: solid 2px #000;
+}
+
+table.departures h2 {
+  padding: 0;
+}
+
+table.departures thead {
+  background: #000;
+  color: #FFF;
+}
+
+table th, td {
+  padding: 1rem;
+}
+
+table tr:not(:last-of-type) td {
+  border-bottom: solid 2px #000;
+}
+
+.main-departures {
+  margin: 1rem;
+}
