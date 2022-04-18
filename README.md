@@ -1,5 +1,7 @@
 # METRO Departures
 
+Find Minneapolis METRO departures using [metro-departures.netlify.app](https://metro-departures.netlify.app/), built with [Remix Run](https://remix.run/).
+
 [![Preview of Minneapolis METRO departures route, direction, and stops, and departures.](screenshot.png)](https://metro-departures.netlify.app/route/902/direction/1/stop/UNDP)
 
 Production: https://metro-departures.netlify.app/route/902/direction/1/stop/UNDP
